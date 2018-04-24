@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::any('/config/getUser', 'UserController@getUser');
+Route::any('/config/userRegister', 'UserController@userRegister');//注册
+Route::any('/config/userLogin', 'UserController@userLogin');//登录
+Route::any('/config/getQuestion', 'QuestionController@getQuestion');//获得题目
+
