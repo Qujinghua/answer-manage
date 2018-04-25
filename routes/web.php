@@ -17,5 +17,8 @@ Route::get('/', function () {
 Route::any('/config/getUser', 'UserController@getUser');
 Route::any('/config/userRegister', 'UserController@userRegister');//注册
 Route::any('/config/userLogin', 'UserController@userLogin');//登录
-Route::any('/config/getQuestion', 'QuestionController@getQuestion');//获得题目
+Route::any('/config/getChoice', 'QuestionController@getChoice');//获得题目
+Route::any('/config/getBlanks', 'QuestionController@getBlanks');//获得题目
+Route::any('/config/addQuestion', 'QuestionController@addQuestion');//新增题目
+Route::any('/config/delQuestion', 'QuestionController@delQuestion');//删除题目
 
